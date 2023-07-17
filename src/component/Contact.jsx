@@ -2,6 +2,7 @@ import { FaAddressCard, FaElementor, FaPhoneAlt } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -20,9 +21,22 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          Swal.fire({
+            title: 'success!',
+            text: 'Email Send Successfully !!',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+          })
+          form.reset()
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+          })
         }
       );
   };
@@ -65,6 +79,7 @@ const Contact = () => {
                   placeholder="your name"
                   name="user_name"
                   className="input border-2 border-gray-700 w-full "
+                  required
                 />
               </div>
             </div>
@@ -75,6 +90,7 @@ const Contact = () => {
                   placeholder="your email"
                   name="user_email"
                   className="input  w-full border-2 border-gray-700 "
+                  required
                 />
               </div>
             </div>
@@ -82,6 +98,7 @@ const Contact = () => {
               name="message"
               className="textarea textarea-ghost w-full mt-6 border-2 border-gray-700"
               placeholder="message"
+              required
             ></textarea>
             <input
               type="submit"
