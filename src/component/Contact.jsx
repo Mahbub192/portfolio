@@ -44,26 +44,26 @@ const Contact = () => {
   return (
     <div className="my-20 px-5 md:px-0" id="contact">
       <h1 className="text-5xl font-bold text-center  mb-10">
-        Contact <span className="text-[crimson]">Me</span>
+        Contact <span className="text-accent">Me</span>
       </h1>
       <div className="flex flex-wrap items-center justify-around">
         <div className="md:w-3/12">
           <p className="flex items-center gap-2 my-3">
-            <span className="text-[crimson] text-2xl">
+            <span className="text-accent text-2xl">
               <FaAddressCard />
             </span>{" "}
             <span className="text-xl">Address: </span>{" "}
             <span className="text-gray-400">Mirpur-10, Dhaka</span>
           </p>
           <p className="flex items-center gap-2 my-3">
-            <span className="text-[crimson] text-2xl">
+            <span className="text-accent text-2xl">
               <FaElementor />
             </span>{" "}
             <span className="text-xl">Email: </span>{" "}
             <span className="text-gray-400">mahbubali798@gmail.com</span>
           </p>
           <p className="flex items-center gap-2 my-3">
-            <span className="text-[crimson] text-2xl">
+            <span className="text-accent text-2xl">
               <FaPhoneAlt />
             </span>{" "}
             <span className="text-xl">Phone: </span>{" "}

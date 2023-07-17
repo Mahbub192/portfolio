@@ -9,7 +9,7 @@ import Project from "./component/Project";
 
 const App = () => {
   return (
-    <div className=" md:container md:mx-auto">
+    <div className=" md:container md:mx-auto overflow-hidden">
       <NavBar></NavBar>
       <BannerImage></BannerImage>
       <About></About>

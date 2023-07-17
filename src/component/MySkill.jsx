@@ -26,7 +26,7 @@ const MySkill = () => {
   return (
     <div>
       <h1 className="text-5xl font-bold text-center my-20" id="skill">
-        My <span className="text-[crimson]">Skills</span>
+        My <span className="text-accent">Skills</span>
       </h1>
       <div data-aos-duration="2000" data-aos="zoom-out-left" className="grid md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
         <div className="bg-gray-900 flex flex-col items-center justify-center rounded-lg shadow-2xl">
@@ -100,7 +100,7 @@ const MySkill = () => {
       </div>
       <div className="my-20 px-5 md:px-5">
         <h2 className="text-center font-bold text-5xl">
-          My <span className="text-[crimson]">Education</span>
+          My <span className="text-accent">Education</span>
         </h2>
         <div className="flex flex-wrap relative">
           <div   className="md:w-1/2 flex flex-col  lg:flex-row mt-10">
